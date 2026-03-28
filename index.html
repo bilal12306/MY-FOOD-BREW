@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1f120b" />
+  <meta name="description" content="FOOD BREW — premium food and coffee fusion with cinematic motion, signature biryani, and artisan coffee." />
+  <title>FOOD BREW | Premium Food & Coffee Fusion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise"></div>
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <button class="skip-intro" id="skipIntro" type="button">Skip Intro</button>
+    <div class="intro-scene intro-rice" id="introRice">
+      <div class="plate">
+        <div class="rice-glow"></div>
+        <div class="rice-mound"></div>
+      </div>
+      <div class="rice-particles" id="riceParticles"></div>
+    </div>
+    <div class="intro-scene intro-coffee" id="introCoffee">
+      <div class="pour"></div>
+      <div class="cup">
+        <span class="cup-label">FOOD BREW</span>
+      </div>
+      <div class="steam steam-1"></div>
+      <div class="steam steam-2"></div>
+      <div class="steam steam-3"></div>
+    </div>
+    <div class="intro-scene intro-logo" id="introLogo">
+      <h1 class="intro-logo-text" id="introLogoText"><span>FOOD</span><span class="hyphen" id="introHyphen">-</span><span>BREW</span></h1>
+      <div class="intro-sub">Where Gourmet Food Meets Signature Brew</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">FB</span>
+      <div>
+        <div class="brand-name">FOOD BREW</div>
+        <div class="brand-sub">Food · Brew · Fusion</div>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-panel">Menu</button>
+    <nav class="nav" id="nav-panel">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="reservations.html" class="nav-link">Reservations</a>
+      <a href="order.html" class="nav-link">Order</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-bg"></div>
+      <div class="hero-grid">
+        <div class="orbit-side left">
+          <div class="orbit-label">Coffee Orbits</div>
+          <div class="orbit-stage" data-orbit="coffee" data-radius="170">
+            <div class="orbit-item" data-name="Espresso" data-variant="coffee"><span>Espresso</span><small>single shot</small></div><div class="orbit-item" data-name="Doppio" data-variant="coffee"><span>Doppio</span><small>double shot</small></div><div class="orbit-item" data-name="Espresso Macchiato" data-variant="coffee"><span>Espresso Macchiato</span><small>milk foam</small></div><div class="orbit-item" data-name="Espresso Con Panna" data-variant="coffee"><span>Espresso Con Panna</span><small>whipped cream</small></div><div class="orbit-item" data-name="Americano" data-variant="coffee"><span>Americano</span><small>hot water</small></div><div class="orbit-item" data-name="Cappuccino" data-variant="coffee"><span>Cappuccino</span><small>foam + milk</small></div>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <div class="eyebrow">Freshly brewed · Chef-crafted · Premium experience</div>
+          <h1>Where Gourmet Food Meets Signature Brew</h1>
+          <p>A premium fusion of rich flavors, handcrafted dishes, and unforgettable coffee moments — all in one place.</p>
+          <div class="cta-row">
+            <a href="#menu" class="btn primary">Explore Menu</a>
+            <a href="reservations.html" class="btn ghost">Reserve a Table</a>
+          </div>
+        </div>
+
+        <div class="orbit-side right">
+          <div class="orbit-label">Signature Dishes</div>
+          <div class="orbit-stage" data-orbit="food" data-radius="190">
+            <div class="orbit-item" data-name="Chicken Biryani" data-variant="food"><span>Biryani</span><small>Rice icon</small></div>
+            <div class="orbit-item" data-name="Beef Biryani" data-variant="food"><span>Beef</span><small>Slow cooked</small></div>
+            <div class="orbit-item" data-name="Chicken Karahi" data-variant="food"><span>Karahi</span><small>Spiced</small></div>
+            <div class="orbit-item" data-name="Butter Chicken" data-variant="food"><span>Butter</span><small>Rich gravy</small></div>
+            <div class="orbit-item" data-name="Paneer Tikka Masala" data-variant="food"><span>Paneer</span><small>Velvety</small></div>
+            <div class="orbit-item" data-name="Goat Karahi" data-variant="food"><span>Goat</span><small>Signature</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-notes">
+        <span>Premium dining</span><span>Artisan coffee</span><span>Cartoon-cinematic 3D feel</span>
+      </div>
+    </section>
+
+    <section class="section fusion reveal">
+      <div class="section-head">
+        <span class="kicker">Fusion Specials</span>
+        <h2>Menu pairings designed to feel rich, warm, and unforgettable.</h2>
+      </div>
+      <div class="fusion-grid">
+        <article class="pair-card">
+          <div class="pair-plate plate-a"></div>
+          <h3>Chicken Biryani + Cappuccino</h3>
+          <p>A bold rice classic with a soft creamy finish.</p>
+        </article>
+        <article class="pair-card">
+          <div class="pair-plate plate-b"></div>
+          <h3>Chicken Karahi + Espresso</h3>
+          <p>Spice-forward flavor balanced by sharp coffee depth.</p>
+        </article>
+        <article class="pair-card">
+          <div class="pair-plate plate-c"></div>
+          <h3>Paneer Tikka Masala + Latte</h3>
+          <p>Comforting, layered, and luxurious on the palate.</p>
+        </article>
+        <article class="pair-card">
+          <div class="pair-plate plate-d"></div>
+          <h3>Goat Karahi + Mocha</h3>
+          <p>Hearty meat richness paired with a smooth mocha edge.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section why reveal">
+      <div class="section-head">
+        <span class="kicker">Why Food Brew</span>
+        <h2>We build a premium experience around hospitality, flavor, and motion.</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Chef-crafted menu</h3>
+          <p>From biryani trays to grilled platters, every item is styled like a hero product.</p>
+        </div>
+        <div class="feature">
+          <h3>Artisan coffee program</h3>
+          <p>Espresso, cappuccino, latte, mocha, and more—presented with elegant energy.</p>
+        </div>
+        <div class="feature">
+          <h3>Premium presentation</h3>
+          <p>Warm espresso tones, caramel highlights, and cinematic motion from the first second.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-head">
+        <span class="kicker">Featured Menu</span>
+        <h2>Real menu items from your catering sheets, polished into a premium showcase.</h2>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab active" data-tab="rice" role="tab">Pakistani Catering Rice</button>
+        <button class="tab" data-tab="veg" role="tab">Pakistani Catering Vegetable</button>
+        <button class="tab" data-tab="meat" role="tab">Pakistani Catering Meat</button>
+        <button class="tab" data-tab="coffee" role="tab">Coffee Menu</button>
+      </div>
+      <div class="menu-panels">
+        <div class="menu-panel active" data-panel="rice">
+          <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Chicken Biryani</span><span class="menu-card-badge">$75</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$75</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$150</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Beef Biryani</span><span class="menu-card-badge">$85</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$85</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$175</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Mutton Biryani</span><span class="menu-card-badge">$95</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$95</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$185</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Vegetable Biryani</span><span class="menu-card-badge">$60</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$60</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$115</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Mutton Pulao</span><span class="menu-card-badge">$95</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$95</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$185</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>White Rice</span><span class="menu-card-badge">$35</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$35</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$70</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Zeera Rice</span><span class="menu-card-badge">$35</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$35</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$70</strong></div>
+        </article>
+        </div>
+        </div>
+        <div class="menu-panel" data-panel="veg">
+          <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Chana Masala</span><span class="menu-card-badge">$50</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$50</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$95</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Dal Makhni</span><span class="menu-card-badge">$50</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$50</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$95</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Aloo Palak</span><span class="menu-card-badge">$55</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$55</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$100</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Paneer Tikka Masala</span><span class="menu-card-badge">$55</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$55</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$100</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Shahi Paneer</span><span class="menu-card-badge">$55</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$55</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$100</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Mix Vegetable</span><span class="menu-card-badge">$55</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$55</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$100</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Bhindi Masala</span><span class="menu-card-badge">$55</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$55</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$100</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Aloo Gobi</span><span class="menu-card-badge">$50</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$50</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$95</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Zeera Aloo</span><span class="menu-card-badge">$50</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$50</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$95</strong></div>
+        </article>
+        </div>
+        </div>
+        <div class="menu-panel" data-panel="meat">
+          <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Chicken Karahi</span><span class="menu-card-badge">$80</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$80</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$150</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Chicken Korma</span><span class="menu-card-badge">$80</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$80</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$150</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Butter Chicken</span><span class="menu-card-badge">$85</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$85</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$175</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Chicken Jalfrezi</span><span class="menu-card-badge">$80</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$80</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$150</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Chicken Achari</span><span class="menu-card-badge">$80</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$80</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$150</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Palak Chicken</span><span class="menu-card-badge">$80</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$80</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$150</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Murgh Chana</span><span class="menu-card-badge">$90</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$90</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$120</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Aloo Gosht</span><span class="menu-card-badge">$175</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$175</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$180</strong></div>
+        </article>
+        
+
+        <article class="menu-card">
+          <div class="menu-card-top"><span>Goat Karahi</span><span class="menu-card-badge">$175</span></div>
+          <div class="menu-card-bottom"><span>Half Tray</span><strong>$175</strong></div>
+          <div class="menu-card-bottom"><span>Full Tray</span><strong>$350</strong></div>
+        </article>
+        </div>
+        </div>
+        <div class="menu-panel" data-panel="coffee">
+          <div class="menu-grid coffee-grid">
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Espresso</span><span class="menu-card-badge">$2.00</span></div>
+                <div class="menu-card-bottom"><span>single shot</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Doppio</span><span class="menu-card-badge">$4.00</span></div>
+                <div class="menu-card-bottom"><span>double shot</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Espresso Macchiato</span><span class="menu-card-badge">$4.00</span></div>
+                <div class="menu-card-bottom"><span>milk foam</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Espresso Con Panna</span><span class="menu-card-badge">$4.00</span></div>
+                <div class="menu-card-bottom"><span>whipped cream</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Americano</span><span class="menu-card-badge">$5.00</span></div>
+                <div class="menu-card-bottom"><span>hot water</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Cappuccino</span><span class="menu-card-badge">$6.00</span></div>
+                <div class="menu-card-bottom"><span>foam + milk</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Latte</span><span class="menu-card-badge">$6.00</span></div>
+                <div class="menu-card-bottom"><span>silky milk</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Irish</span><span class="menu-card-badge">$7.00</span></div>
+                <div class="menu-card-bottom"><span>whiskey aroma</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Fredo</span><span class="menu-card-badge">$7.00</span></div>
+                <div class="menu-card-bottom"><span>ice espresso</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Frappe</span><span class="menu-card-badge">$7.00</span></div>
+                <div class="menu-card-bottom"><span>iced foam</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Mocha</span><span class="menu-card-badge">$7.00</span></div>
+                <div class="menu-card-bottom"><span>chocolate</span><strong>Signature Brew</strong></div>
+              </article>
+            
+              <article class="menu-card coffee-card">
+                <div class="coffee-art">
+                  <span class="cup-shape"></span>
+                </div>
+                <div class="menu-card-top"><span>Caramel Macchiato</span><span class="menu-card-badge">$7.00</span></div>
+                <div class="menu-card-bottom"><span>caramel finish</span><strong>Signature Brew</strong></div>
+              </article>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section carousel reveal">
+      <div class="section-head">
+        <span class="kicker">Interactive 3D Carousel</span>
+        <h2>Big circular motion, equal spacing, and a premium orbit that feels alive.</h2>
+      </div>
+      <div class="carousel-shell">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-card active">Chicken Biryani</div>
+          <div class="carousel-card">Cappuccino</div>
+          <div class="carousel-card">Chicken Karahi</div>
+          <div class="carousel-card">Latte</div>
+          <div class="carousel-card">Paneer Tikka Masala</div>
+          <div class="carousel-card">Mocha</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story reveal">
+      <div class="story-grid">
+        <div class="story-copy">
+          <span class="kicker">Our Story</span>
+          <h2>FOOD BREW is where bold cuisine and crafted coffee meet in one warm, memorable destination.</h2>
+          <p>We combined the comfort of Pakistani catering favorites with the refinement of a modern coffee house. The result is a brand that feels inviting, elevated, and built for repeat visits.</p>
+        </div>
+        <div class="story-panel">
+          <div class="story-ring"></div>
+          <div class="story-card">
+            <strong>Premium fusion</strong>
+            <span>Luxury food + artisan brew</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials reveal">
+      <div class="section-head">
+        <span class="kicker">Testimonials</span>
+        <h2>Designed to feel trusted, elegant, and memorable.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <p>“The biryani trays feel premium and the coffee pairing concept is brilliant.”</p>
+          <strong>— Ayesha K.</strong>
+        </article>
+        <article class="testimonial">
+          <p>“This is the kind of restaurant website that makes you book before you even look away.”</p>
+          <strong>— Hamza R.</strong>
+        </article>
+        <article class="testimonial">
+          <p>“The menu presentation is clean, warm, and feels far more expensive than a standard template.”</p>
+          <strong>— Sara M.</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta reveal">
+      <div class="cta-panel">
+        <span class="kicker">Ready to Taste the Fusion?</span>
+        <h2>Book your table or place your order in a single elegant step.</h2>
+        <div class="cta-row">
+          <a href="reservations.html" class="btn primary">Book Your Table</a>
+          <a href="order.html" class="btn ghost">Order Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">FOOD BREW</div>
+        <p>Warm hospitality, signature dishes, and artisan coffee in one cinematic experience.</p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Mon–Sun · 11:00 AM – 11:00 PM</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>+92 300 000 0000</p>
+        <p>hello@foodbrew.com</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p>Karachi, Pakistan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 FOOD BREW. Crafted for a premium fusion dining experience.</div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
